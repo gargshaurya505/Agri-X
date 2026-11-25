@@ -1,0 +1,49 @@
+# Python environment
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyTorch / Models
+*.pt
+*.pth
+*.onnx
+*.safetensors
+models/*
+!models/.gitkeep
+
+# Data & Datasets (never commit raw dataset binaries or large images)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Experiments & Checkpoints
+experiments/*
+!experiments/.gitkeep
+
+# Reports / Output images
+reports/figures/*
+!reports/figures/.gitkeep
+
+# IDE & OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local

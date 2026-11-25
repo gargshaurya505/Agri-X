@@ -1,0 +1,48 @@
+# AGRI-X Dataset Configuration
+
+datasets:
+  plantvillage:
+    name: "PlantVillage"
+    role: "primary_training"
+    description: "Lab-conditioned plant disease benchmark dataset"
+    raw_path: "data/raw/plantvillage/raw/color"
+    leaf_map_path: "data/raw/plantvillage/leaf-map.json"
+    crop: "tomato"
+    num_classes: 10
+    splits:
+      train: 0.70
+      val: 0.15
+      test: 0.15
+    image_specs:
+      input_size: [224, 224]
+      channels: 3
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  plantdoc:
+    name: "PlantDoc"
+    role: "external_evaluation"
+    description: "In-the-wild real-world evaluation dataset for cross-domain generalization"
+    raw_path: "data/raw/PlantDoc-Dataset"
+    crop: "tomato"
+    image_specs:
+      input_size: [224, 224]
+      channels: 3
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+# Image preprocessing and augmentation parameters
+preprocessing:
+  target_size: [224, 224]
+  interpolation: "bilinear"
+  color_mode: "RGB"
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# Audit thresholds and rules
+audit:
+  supported_extensions: [".jpg", ".jpeg", ".png", ".bmp", ".webp"]
+  hash_algorithm: "md5"
+  check_dimensions: true
+  detect_corrupted: true

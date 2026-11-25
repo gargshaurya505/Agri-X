@@ -1,0 +1,71 @@
+# AGRI-X Project Configuration
+# Explainable AI-Based Crop Disease Detection and Agricultural Intelligence System
+
+project:
+  name: "AGRI-X"
+  version: "0.1.0"
+  description: "Explainable AI-Based Crop Disease Detection and Agricultural Intelligence System"
+  seed: 42
+
+# Device configuration (supported: 'auto', 'mps', 'cuda', 'cpu')
+device:
+  mode: "auto"
+  fallback: "cpu"
+
+# Supported crop target configuration
+supported_crops:
+  - "tomato"
+
+# Class label definition for initial Tomato pipeline (10 classes)
+classes:
+  tomato:
+    - id: 0
+      name: "Bacterial Spot"
+      slug: "bacterial_spot"
+      scientific_name: "Xanthomonas campestris pv. vesicatoria"
+      type: "disease"
+    - id: 1
+      name: "Early Blight"
+      slug: "early_blight"
+      scientific_name: "Alternaria solani"
+      type: "disease"
+    - id: 2
+      name: "Late Blight"
+      slug: "late_blight"
+      scientific_name: "Phytophthora infestans"
+      type: "disease"
+    - id: 3
+      name: "Leaf Mold"
+      slug: "leaf_mold"
+      scientific_name: "Passalora fulva"
+      type: "disease"
+    - id: 4
+      name: "Septoria Leaf Spot"
+      slug: "septoria_leaf_spot"
+      scientific_name: "Septoria lycopersici"
+      type: "disease"
+    - id: 5
+      name: "Spider Mites"
+      slug: "spider_mites"
+      scientific_name: "Tetranychus urticae"
+      type: "pest"
+    - id: 6
+      name: "Target Spot"
+      slug: "target_spot"
+      scientific_name: "Corynespora cassiicola"
+      type: "disease"
+    - id: 7
+      name: "Tomato Yellow Leaf Curl Virus"
+      slug: "yellow_leaf_curl_virus"
+      scientific_name: "Tomato yellow leaf curl virus (TYLCV)"
+      type: "virus"
+    - id: 8
+      name: "Tomato Mosaic Virus"
+      slug: "mosaic_virus"
+      scientific_name: "Tomato mosaic virus (ToMV)"
+      type: "virus"
+    - id: 9
+      name: "Healthy"
+      slug: "healthy"
+      scientific_name: "Solanum lycopersicum"
+      type: "healthy"

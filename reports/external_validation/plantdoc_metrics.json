@@ -1,0 +1,3968 @@
+{
+  "overall_metrics": {
+    "accuracy": 0.33480176211453744,
+    "macro_precision": 0.2146345218105763,
+    "macro_recall": 0.239236161813715,
+    "macro_f1": 0.2015627668430254,
+    "weighted_f1": 0.27980276552697586,
+    "total_samples": 681,
+    "misclassified_samples_count": 453
+  },
+  "classification_report": {
+    "Bacterial Spot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 110.0
+    },
+    "Early Blight": {
+      "precision": 0.21637426900584794,
+      "recall": 0.42045454545454547,
+      "f1-score": 0.2857142857142857,
+      "support": 88.0
+    },
+    "Late Blight": {
+      "precision": 0.3204225352112676,
+      "recall": 0.8198198198198198,
+      "f1-score": 0.4607594936708861,
+      "support": 111.0
+    },
+    "Leaf Mold": {
+      "precision": 0.32,
+      "recall": 0.08791208791208792,
+      "f1-score": 0.13793103448275862,
+      "support": 91.0
+    },
+    "Septoria Leaf Spot": {
+      "precision": 0.44029850746268656,
+      "recall": 0.39072847682119205,
+      "f1-score": 0.41403508771929826,
+      "support": 151.0
+    },
+    "Spider Mites": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "Target Spot": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "Tomato Yellow Leaf Curl Virus": {
+      "precision": 0.6346153846153846,
+      "recall": 0.4342105263157895,
+      "f1-score": 0.515625,
+      "support": 76.0
+    },
+    "Tomato Mosaic Virus": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 54.0
+    },
+    "Healthy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.33480176211453744,
+    "macro avg": {
+      "precision": 0.19317106962951866,
+      "recall": 0.21531254563234348,
+      "f1-score": 0.18140649015872284,
+      "support": 681.0
+    },
+    "weighted avg": {
+      "precision": 0.2914004125383263,
+      "recall": 0.33480176211453744,
+      "f1-score": 0.27980276552697586,
+      "support": 681.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      0,
+      34,
+      37,
+      2,
+      35,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      37,
+      36,
+      1,
+      12,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      11,
+      91,
+      4,
+      3,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      15,
+      59,
+      8,
+      6,
+      0,
+      0,
+      2,
+      0,
+      1
+    ],
+    [
+      2,
+      50,
+      27,
+      6,
+      59,
+      0,
+      0,
+      4,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      12,
+      1,
+      14,
+      0,
+      0,
+      33,
+      0,
+      4
+    ],
+    [
+      0,
+      12,
+      22,
+      3,
+      5,
+      0,
+      1,
+      9,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "confusion_matrix_normalized": [
+    [
+      0.0,
+      0.3090909090909091,
+      0.33636363636363636,
+      0.01818181818181818,
+      0.3181818181818182,
+      0.0,
+      0.0,
+      0.01818181818181818,
+      0.0,
+      0.0
+    ],
+    [
+      0.022727272727272728,
+      0.42045454545454547,
+      0.4090909090909091,
+      0.011363636363636364,
+      0.13636363636363635,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0990990990990991,
+      0.8198198198198198,
+      0.036036036036036036,
+      0.02702702702702703,
+      0.0,
+      0.0,
+      0.018018018018018018,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.16483516483516483,
+      0.6483516483516484,
+      0.08791208791208792,
+      0.06593406593406594,
+      0.0,
+      0.0,
+      0.02197802197802198,
+      0.0,
+      0.01098901098901099
+    ],
+    [
+      0.013245033112582781,
+      0.33112582781456956,
+      0.17880794701986755,
+      0.039735099337748346,
+      0.39072847682119205,
+      0.0,
+      0.0,
+      0.026490066225165563,
+      0.0,
+      0.019867549668874173
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.15789473684210525,
+      0.15789473684210525,
+      0.013157894736842105,
+      0.18421052631578946,
+      0.0,
+      0.0,
+      0.4342105263157895,
+      0.0,
+      0.05263157894736842
+    ],
+    [
+      0.0,
+      0.2222222222222222,
+      0.4074074074074074,
+      0.05555555555555555,
+      0.09259259259259259,
+      0.0,
+      0.018518518518518517,
+      0.16666666666666666,
+      0.0,
+      0.037037037037037035
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "misclassified": [
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf%2Binf%2B800%2B1.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.999991774559021
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Leafspotx450xBugwood.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9999663829803467
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/HighTunnel_TLM5.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9999470710754395
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/3606630.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9998934268951416
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial-speck-tomato-leaves.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9998714923858643
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato7x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9998319149017334
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/8%20mistakes%204.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9998167157173157
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-speck-tomato1x2400-275mmny.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9998016953468323
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/1058_0.jpeg?itok=OQkdtxgv.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.999783456325531
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-pp-labeled_orig.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9995946288108826
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato-blight-soil-treatment-early-tomato-blight-in-a-microcosm-lower-leaves-curl-up-and-die-bulls-eye-lesions-tomato-fungus-soil-treatment.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9994500279426575
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato5x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.998982846736908
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/latest?cb=20100808132744.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9988245368003845
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leafmoldtomato2.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9986491799354553
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-or-target-spot-alternaria-solani-lesions-on-a-tomato-BH3TH0.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9984191656112671
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/23601051_1572608349449262_2029169498_o.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9983969330787659
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/5008922249_880e15c21f.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9983704686164856
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold1.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9982550740242004
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-disease-septoria-leaf-spot-d7e1xe.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9982036352157593
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/5114949114265600-600x272.jpeg.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9981532692909241
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/RyBx7MH.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9981361627578735
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-leaf-spot-600.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9980742931365967
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early%20blight%20%284%29.jpg?itok=gfK5C193.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.998012900352478
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/grey-mould-botrytis-cinerea-on-bottom-of-a-tomato-leaf-late-in-the-AFRDAN.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9979248046875
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Figure-3-7.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9978246688842773
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato1x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9978117346763611
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/266914753eb19d87b80567baed1a0f66.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9976747632026672
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/tomato1A.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9975582361221313
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Diseased-Tomato-Plant.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9975264668464661
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-leaves-260nw-670831669.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9975022673606873
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/ArticleImage.aspx?imgid=4987.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9973226189613342
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/TomatoLeafMold1-50QUALITY-16lgkq6.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9972854852676392
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-leaf.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9971674084663391
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/a3fb24f84fe70e5d37352d13106531d6.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9971033930778503
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-speck-tomato-2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9967568516731262
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late_blight_drought_leaves1x1200.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.9965059757232666
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_leaf-mold_04_zoom.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9964247345924377
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/gray-mold-on-tomato-leaf.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9961457252502441
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato4x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9960079193115234
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/5866245865865216.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9959204196929932
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/5830204360_757cd7fdfc_z.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9946657419204712
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/4-6%20Keep%20bacterial%20diseasesMARY%20-%20D.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9946098327636719
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Pest2371.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.994523286819458
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Leaf%2Bspot%2B1000.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.994366466999054
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-leaf-spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9939405918121338
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial_spots2277.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9935652613639832
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria3.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9935052394866943
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/DSC02246.JPG.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9934432506561279
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Septoria leaf spot/55830b60a7cf2.image.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9931487441062927
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial_spots2276.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9921356439590454
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Botrytis-Tomato-Seedlings-2-copy-50QUALITY-17wck0d.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9912492036819458
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/Tom_Bact7.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9890185594558716
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-leaf-spot-septoria-lycopersici-on-a-tomato-leaflet-acg9j5.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9887829422950745
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-speck-tomato-3.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9883671402931213
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato-late-blight-phytophthora-infestans-lesions-and-damage-on-tomato-bh3w9j.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9882863163948059
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato-leaf-mold-infection-on-a-leaf-top-and-underside-picture-id81781575?s=612x612.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9872358441352844
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_fulvia2.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9870222210884094
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Early blight leaf/1234080-Early-Blight.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9868202805519104
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/leafspot-5aba8283642dca003687f6fa.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9868130087852478
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/spotonleaf1.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9863311052322388
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_nightshade2x500.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9861035346984863
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/image5_300x300%2523.JPG?1472755422.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9854463338851929
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Jeter%20Mtn%20Farm_7053.JPG.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9844744205474854
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/28018723549_3a16c1467b_b.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9842995405197144
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/mosaic_virus_tomato_small.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9834790229797363
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato_late-blight_05_zoom.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9828367233276367
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-leaf-spot--.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9827772378921509
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato3x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9814150929450989
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/39765006175_e2f0da764d_b.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.980976402759552
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato-gray-leaf-spot.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9802994728088379
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/23600077_1572609202782510_2145699867_o.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9800910353660583
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/250?cb=20100819110637.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9787217974662781
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bac-spot.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9783841371536255
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/earlyblightpotato.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9773960113525391
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late_blight_2013_longisland1x1200.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.9764997959136963
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/IMG_1261.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9759896993637085
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato_virus_01_zoom.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9751494526863098
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/eb56b488e349c2de423ab6afbcc4bd5b.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9750205874443054
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/black%20leaf%20mold%20%284%29.JPG?itok=DIIUw9JU.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9749470353126526
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/140714+%2811%29.JPG.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9747942090034485
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/05-069f1.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9743014574050903
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/Bacterial_spots563.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9736396074295044
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/confused-bacterial-canker-early-blight-zoom.JPG.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9734789133071899
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-badleaves.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9727613925933838
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/9511.img.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9715386629104614
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Fig.%2016_opt.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9714367389678955
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/dscn3168.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 0,
+      "pred_class_name": "Bacterial Spot",
+      "confidence": 0.9712252020835876
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-disease-on-260nw-559799638.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9701463580131531
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-spot-of-tomato-6-638.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9693117141723633
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/fig2-2k11-1-12.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.969037652015686
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/1576389-early%20blight%20symptoms.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9676345586776733
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato_leaf_curl_ND_on_luffah_KC3701030-3.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9673300981521606
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/gray-leaf-spot-300x225.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9642755389213562
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato_D2b-Early-blight---RPitblado_zoom.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9639551639556885
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/tomato_bacterial-speck_01_zoom.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9629793167114258
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-spot-of-tomato-7-638.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.962627649307251
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/Tom_Bact3.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.962254524230957
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/tmv-tomato-9.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9622098207473755
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato_early-blight_02_zoom.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9621418714523315
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Tomato%20bacterial%20canker.JPG.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.961783766746521
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-or-target-spot-alternaria-solani-lesions-on-a-tomato-BY9J8R.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9615457653999329
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/p1020084s.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.961173951625824
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Early blight leaf/earlyblight21_.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9602535367012024
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato_early-blight_03_zoom.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9564146995544434
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf+mold+tomato+%25283%2529.JPG.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9556074738502502
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Fig.%2015_opta.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9554390907287598
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/image3_original.JPG?1472755422.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9544352889060974
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/dscn6690.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9535202980041504
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-lycopersici-ascomycota-common-fungal-leaf-disease-of-tomato-picture-id128110611.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9534938335418701
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/IMG_2348.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9534810185432434
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/10-3-bacterial-speck-on-tomato-RON.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9514411091804504
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/607-155-1.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9495342373847961
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/stock-photo-tomato-plants-infected-by-the-late-blight-plant-pathogen-phytophthora-infestans-macro-539209615.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9480841755867004
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/IMG_0312_original.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9475812315940857
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato2x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.947549045085907
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tj5itxzunn3k.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9475081562995911
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/05-069f9.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9473329782485962
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/05-069f12.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9467419385910034
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Canker-GHTom-CAG-leaf-collapse-copy-50-QUALITY-1ur7cyk.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9452040195465088
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato_leaves_300x300%2523.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9451439380645752
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/fig1-2k11-163-165.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9405894875526428
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight1.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9401893019676208
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/5c77186a4ea326e5495c9d03cd89ce16.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9387256503105164
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Tomato-Alternaria-Early-Blight.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9385976791381836
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late-blight-TomC2-10.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9377830028533936
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-disease-260nw-1072448252.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9360456466674805
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/vdu-tomato-sept-eb-285x300.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.9353483319282532
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/beg.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9335702061653137
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/image233.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9312490820884705
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-leaf-spot-in-tomatoes.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9302365183830261
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/TC6-300x194.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9302284121513367
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato_late-blight_01_zoom.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9298883080482483
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_leaf-mold_01_zoom.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.927784264087677
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/2014-08-27%2B-%2BCloser%2BView%2Bof%2BSeptoria%2BLeaf%2BSpot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9275036454200745
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Septoria%2Bleaf%2Bspot.tomato.JPG.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9273384213447571
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/gn201410308259997ar-jpg.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9268865585327148
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_tomato6x1200.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9261347651481628
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/mosaic_virus_tomato.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9255385994911194
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/IMG_2436w.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9249244928359985
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Leaf%2Bsymptoms%2BMDA.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9246178269386292
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterialLeafSpot04-xqxm03.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9217385649681091
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/20809116-standard.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9214653968811035
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/d-to-tylv-fo005-14496A31BE70553130A.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9201399087905884
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Tomato%20greenhouse%20leaf%20edema%20and%20distortion2F.JPG.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9165006875991821
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/august-11-early-leaf-blight-single-leaf.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.911836564540863
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria_leaf_spot_of_tomato-1500x750.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9113962650299072
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/B%29-Leafunsidecladosp-envez.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.9107545614242554
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/CankerRhiemsFiring1-copy-50-QUALITY-16lcw30.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9094408750534058
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Tomato%20greenhouse%20phythotoxicity03F.JPG.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9031695127487183
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/1b.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.9028307795524597
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/thumb-500.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9027880430221558
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Early_Blight_of_Tomato1687.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.9016715884208679
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-plant-is-infected-with-septoria-leaf-spot-1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8945996165275574
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial_spots1300.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8939812779426575
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/bnX8Q.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8937665820121765
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/603-116-0.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8902422785758972
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/tomato_xanthomonas_foliage.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8899737000465393
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/stock-photo-tomato-mosaic-virus-disease-on-tomato-559799668.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.889458179473877
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-disease-on-260nw-625499780.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8894135355949402
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tylcv.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.8882447481155396
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Tomato+leaf+mold.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8863877654075623
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/photo-1.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8827165365219116
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/pm3.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8825591206550598
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato-late-blight-phytophthora-infestans-lesions-on-greenhouse-grown-ATA11J.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8789336085319519
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/TomatoLeafMold2-50QUALITY-1b89zfs.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8775960206985474
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-canker3x2400-2ia1kgd.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8773307204246521
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_leaf-mold_03_zoom.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8741223812103271
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria5.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8732746243476868
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/18071.img.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8731118440628052
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-disease-septoria-leaf-spot-d7e1x9.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.872935950756073
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/my-plant-has-brown-spots-leaf-spot-and-canker-on-dogwood.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8722919225692749
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/SeptoriaLeaf_T3.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8722547888755798
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/IMG_7442%20resized_0.preview.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8718539476394653
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Bean-rust-on-leaves.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.870779275894165
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-leaf-spot-tomato-1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8701146245002747
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato_leaf_spots_1500x1500%253E.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.8700839281082153
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Septoria leaf spot/636227737977191231-septoria-leaf-spot-VT.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8662240505218506
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/13582051_f520.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8657975196838379
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/alter_cank2-150x150.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8655235171318054
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-leaf-spot.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8639693260192871
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-5-500x384.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8612205982208252
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-in-high-tunnel-tomatoes-19tm74h.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8600890040397644
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tylcv-seminar-1-638.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.859494686126709
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf yellow virus/tylcv-seminar-1-638.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.859494686126709
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/d41c86a650e49b8066d6b347d8e9d3ad.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.858879029750824
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/IMG_2254.JPG.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8578818440437317
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/dahliaviralsymptoms2lowresjpg.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8571243286132812
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/07.17.18-Common_Tomato_Diseases_Canker-258x300.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8555224537849426
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Septoria-461x346.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8545631170272827
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/pp1244-05.jpeg.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8501201272010803
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf-mold-web.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8500763773918152
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/DSC_3019_320x209.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8491759896278381
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Tomato-Early-Blight-Leaf-Examples-Cornell-University.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8482187986373901
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bac.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8475567102432251
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/14456.img.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.8431379795074463
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf-mold3.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8417889475822449
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/607-155-0.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8411485552787781
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/IMG_2684.JPG.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8401135802268982
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/IMG_4452_1500x1500%253E.JPG?1407883119.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8393251299858093
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomatodisease001sm.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8380403518676758
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-leaf-spot-.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8372941613197327
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_Leaf-roll-physiological-7059-SLoewen_thm.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.8362589478492737
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/8950022d45978228d5e44a35183efdb9--tomatoes-dyi.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8362449407577515
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf yellow virus/17fc47.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8329697251319885
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/BCH%20medium%20thumbnail%20for%20upload%20%2861%29.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.832344114780426
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial-spot-on-tomato-leaves.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8263915181159973
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/Tomato+mosaic+virus.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8250431418418884
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/30290.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8244051933288574
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-plant-is-infected-with-septoria-leaf-spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8192762732505798
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/x3-most-common-types-tomato-blight.jpg.pagespeed.ic.5cLJi6TXEi.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8173415660858154
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_leaf-mold_02_zoom.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8145221471786499
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-1.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8124202489852905
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/534ddf3a932e62dd929a3ac1b29bfa29.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.808276891708374
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/IU-TYLCV_img_6.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.8070545196533203
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bc34aec4ea7f60a64e380fda44c2f380.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8067619800567627
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/black%20leaf%20mold%20%283%29.JPG?itok=u5TDHCSM.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8057069182395935
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterialspottomato2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.8049716353416443
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/1422_0.jpeg.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.8004961609840393
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato_D33a-Late-blight-015-OMAFHRT_zoom.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.8000261783599854
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.797785222530365
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/black_leaf_mold_in_zina_tina.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7965784072875977
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-fern-leaf-a-symptom-of-tmv-cmv-or-pepmv-virus-on-tomato-plants-h6ey8w.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7955648303031921
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Tomato_Septoria_Leaf_Spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7930673956871033
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial-Spot-of-Tomato-Img-2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7924284338951111
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Tomato-diseases-prevention-treatment.-Early-blight..jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7886837720870972
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/38849847120_7ae02bd6c3_b.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.787909746170044
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/ebleafb.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7870416641235352
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Tomato+leaf+spot2.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7861089110374451
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/early-blight-septoria-ls-fig-3.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7849234342575073
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Septoria leaf spot/early-blight-septoria-ls-fig-3.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7849234342575073
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/PHOTO_1333642740144.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.7821126580238342
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-5.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7773235440254211
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Tomato-Canker-Marginal-Necrosis-Leaf-GH-Guat-50-QUALITY-10e6dzu.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7773032188415527
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/gray-leaf-spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.775936484336853
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/xgray-leaf-spot.jpg.pagespeed.ic.ltF8KfKtQ1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.775936484336853
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato-leaf-mold.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7741360664367676
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/3bacterial-canker1.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7730581760406494
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Tomato-Early-Blight.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.769710898399353
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/droppedImage_3.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7632432579994202
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial_spots586.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7629402875900269
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial+Spot+-+Tomatoes.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.7623967528343201
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/virus1.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7621802091598511
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterialLeafSpot07-2jqdlmz.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7608612179756165
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/HighTunnel_TLM6.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.760641872882843
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf-mold-caused-by-the-fungal-pathogen-Passalore-fulva-in-tomatoes.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7552700042724609
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/FS547-4-big.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7542723417282104
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_plants_1_original.JPG?1407178095.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7542560696601868
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/Tomato-Mosaic-1wdr2jx-300x225.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7526860237121582
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/IN0335.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7524532675743103
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-3-500x384.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7508488893508911
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bact-spot-leaf-big.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7379573583602905
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/Tomato%2Bmosaic%2Bvirus.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.7270945906639099
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Leaf-spots-on-tomato-leaves-Credits-Hank-Dankers_Q320.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7268091440200806
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/TMV-3.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.7267881035804749
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/BIGSD.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.726739764213562
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/%2320+Bacterial+Spot+and+Speck.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.725792407989502
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-septoria-3.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7256743907928467
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/DSC02007.JPG.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.715935468673706
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/caf212ccf4696675469a0beaa9e57213.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7136499285697937
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/49%20Leafmold%20Bottom.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7123845219612122
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/kg32-beefsteak-tomatoes-08_lg.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7110382914543152
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Sept9-300x225.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7095512747764587
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato_septoria_05_zoom.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7076517939567566
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-leaf-spot-tomatoes1x2400-17g2jzo.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.7076371908187866
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/tmv-tomato-34.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.7026532888412476
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-disease-on-260nw-625499771.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.7023086547851562
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato+blight.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.7002933025360107
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/droppedImage_3-1.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6977164149284363
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/TC3.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.697437047958374
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/51196-004-61703A1B.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6936026215553284
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/Tomato%2BBacterial%2BSpot%2Bon%2BLeaves.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6907905340194702
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Septoria leaf spot/0.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6896962523460388
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/DSCN2697.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6886993646621704
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/dscn6689.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6880301833152771
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/ab40cce958c60d8b6e0ec2e4fdb8f526.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.6878968477249146
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/30053_original.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6846054196357727
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Early blight leaf/Shoemaker_7068.JPG.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6841305494308472
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/latest?cb=20100723105221.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.683259129524231
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/IMG_0591.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6813474893569946
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/TYLCV-tomate-DB-442-167.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6805471181869507
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/71c944d61b08f6373a9a38d3c250cb2e.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6788551211357117
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/halleck_tomato_earlyblight__inline-half.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6766373515129089
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tdisease12.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6712579727172852
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Septoria leaf spot/RARZ4.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6708970665931702
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-2x.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6704028844833374
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato_septoria_alternaria_1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6691762804985046
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato_fulvia.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6688796877861023
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/BCH%20small%20thumbnail%20for%20upload%20%2814%29.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6672257781028748
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/6336392950972416.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6618772745132446
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/closeup-of-tomato-leaf-y4af51-1024x768.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6584038734436035
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/leaf-spot3-big.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.657137393951416
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato_q1hq-early-blight-5052_zoom.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.654678463935852
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/8e60bae9f613f360403943f108a03083.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6534807085990906
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-disease-septoria-leaf-spot-d7e1xm.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6526450514793396
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/illustration-thematique-urbino-fig5.plante%20tylcv.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6511794924736023
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Paret-Fig-1-tomato-bacterial-leaf-spot.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6486971974372864
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Septoria-leaf-spot-on-tomato-FOR-WEB.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6482267379760742
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/b54d0e40027ff5e90e8ba7e1e9abf9bd.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.645743191242218
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/3-tomato-mosaic-virus_web.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6448851227760315
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/image022.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.6424123644828796
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/bigseptoria01.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.641834020614624
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/everystockphoto-21099455-l.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.6401097178459167
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/BacterialSpot06.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6353326439857483
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early%20blight%20%283%29.jpg?itok=UMYWI0xr.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6344197392463684
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial+Speck+-+Tomatoes.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6327237486839294
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/59380.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6300126314163208
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/4853086777_bc41d29801.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6293520927429199
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-virus-tylcv_950983.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6291438937187195
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/6078710516023296.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6290221810340881
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-tomato-leaf.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6270593404769897
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Tomato-blight-large.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.6254591941833496
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/virus2.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6231570243835449
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/TYLCV2.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6193273663520813
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/dscf2712.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6183351278305054
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tmv-tomato-16.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6181071400642395
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf late blight/dsc_8148cs.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.6177067160606384
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/stock-photo-bacterial-spot-on-tomato-559799107.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6167745590209961
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-tomato-blight.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6133316159248352
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late_blight_2013_longisland2x1200.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.6127957105636597
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/FS547-2-big.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6126590371131897
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/23633262_1572609386115825_1396180255_o.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6075472235679626
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Septoria_tomato_Margaret%20B_p8170755_0002_25004.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6066829562187195
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/Early-blight-660x440.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.6049812436103821
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/CankerFoliar-copy-50-QUALITY-122b09b.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.6034635305404663
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/tomato_virus_04_zoom.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.5991716980934143
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/8.--Virus-Damaged-foliage-at-top-versus-healthy,-non-infected-bottom-foliage.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.5979795455932617
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/bd0b83af4c5e4b739ccc6c36fa66f141.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5975684523582458
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/s-prasanth-kumar-young-scientist-awarded-presentation-2-728.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5973976254463196
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-F0BA26.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5972894430160522
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf+mold+tomato+%25282%2529.JPG.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5947906970977783
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-virus-tomato-1.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5938981175422668
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/TomatoBacterialSpot2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5896621346473694
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial-spot-tomato.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5876305103302002
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/TomatoDisease_IMG_2744_2016Jul01_original.JPG?1472858324.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.5875471234321594
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/3893.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 0,
+      "pred_class_name": "Bacterial Spot",
+      "confidence": 0.5864124894142151
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/early-blight-of-tomato-tomato-1.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5841836929321289
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Leaf-Spot-300x253.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.5829637050628662
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Tomato%20bacterial%20spot%20closeup-050S.JPG.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5809367895126343
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-closeup-4.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5798022747039795
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/tomato_V8.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5796182155609131
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial_spots562.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5777250528335571
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/50%20Leafmold%20Top.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5744064450263977
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/pddl-highlights-fig-1-bact-spot.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5724267959594727
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late_blight_tomato_transplant2x1200.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5674307346343994
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/7585001780_4b89e826b7.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5635416507720947
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/MPC105550.jpg.rendition.largest.550.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5631017684936523
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/3182.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5630979537963867
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/dummen-tmv.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5610852837562561
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/IMG_2686.JPG.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5596135854721069
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/photo-764060.JPG.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5572714805603027
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/TNRV2.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5512880086898804
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/110608-01-8356c-lg.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5393142104148865
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-mosaic-virus-disease-on-260nw-625499777.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5362533330917358
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/late_blight_tomato_leavesx500.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5360333323478699
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/img_6564.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.5346678495407104
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/image018.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5337652564048767
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/mosaic-virus-foliage.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.532503068447113
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septorialeafspot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5310341715812683
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-disease.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5305198431015015
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tylc.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5305198431015015
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/8915974546_00664cefe3_z.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5298575758934021
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/tomato_blight_early.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5298234820365906
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato-late-blight-phytophthora-infestans-on-tomato-leaves-a15ym0.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5266101360321045
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/BlackLeafMold2.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5261517763137817
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/072.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5247952342033386
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/lb2.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.523242175579071
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/classic-septoria.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5202919244766235
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/2373320.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 0,
+      "pred_class_name": "Bacterial Spot",
+      "confidence": 0.519824743270874
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-virus-tylvcv-symptoms-on-a-tomato-plant-under-BMYHXY.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5179184675216675
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/32-Septoria-leaf-spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.5178830623626709
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial%20leaf%20spot.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5128154754638672
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/LyraEDISServlet.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5123940706253052
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/clothes014.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.512283444404602
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/5146.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5120090246200562
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/4b0bfd_df5a85f728c74cecbe908a24feadab02.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5092957615852356
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/1c421500ddd390c90596ad2cf12d5429.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5086593627929688
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/tomato-late-blight-leaf-61-3x32.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5086267590522766
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria+on+rudbeckia.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5080371499061584
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/2195890.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5059916973114014
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf+Mold+lower+leaf+surface+spores+%28conidia%29.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5032354593276978
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold2.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5025578737258911
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/36ca1410e232eec4a8003fe411246820.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5025495886802673
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/IMG_4182.JPG.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.5023794174194336
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/tomato-plant-diseases-identification-leaf-spot-tomato-disease-tomato-plant-fungus-identification.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.5015897154808044
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Tom_Sept1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.5009772181510925
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato-leaf-mold-2.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.5007666349411011
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/leaf_mold_nightshade1x500.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4993988871574402
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/p1020083cs.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4975624978542328
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/toma_TMV.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.496906578540802
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bac_spot1-300x298.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4960871934890747
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/5516100468998144-600x272.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.49137553572654724
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tdisease7.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.49133992195129395
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/BacterialSpot07.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.4909900426864624
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/P1020365.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4887601435184479
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf late blight/dsc_4621c.jpg",
+      "true_class_id": 2,
+      "true_class_name": "Late Blight",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.4830939769744873
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/patarea-bacteriana-frunzelor-pseudomonas-syringae-maculicola-31_5_2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.48162776231765747
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/Septoria_Leaf_Spot_of_Tomato186.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4801235496997833
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/D%29AlfMov.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.48009106516838074
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/IU-TYLCV_img_8.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.47905272245407104
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato_mosaic_virus.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 7,
+      "pred_class_name": "Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.4741383194923401
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria_tom_leaves1x1200.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.4735758304595947
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Tomato2_original.JPG?1472597932.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4670165777206421
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/tomato-plant-leaves-brown-spots-tomato-leaves-older-ones-with-spots.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.4651126563549042
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/septoria-leaf-spot-on-tomato-1.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.4650585949420929
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/BCH%20medium%20thumbnail%20for%20upload%20%2814%29.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4628242552280426
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/page_2.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.461661696434021
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato_leaf_roll.JPG.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4616459906101227
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/web1_copy_early-blight-6-_0.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.4605371057987213
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/1342017-162221-44540.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.45872294902801514
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Early blight leaf/eblight5.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4564097821712494
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/5315825271570432.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.45631930232048035
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterialSpeck03510339f27656b-1scmgh1.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4535282552242279
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato mold leaf/fungus-univ-of-minnesoeta.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.45025697350502014
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/role-of-whitefly-in-plant-virus-transmission-by-pmanikandan-13-638.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.4477194547653198
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Ormvn.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.43871062994003296
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/b-speck.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.4380987584590912
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bac_spot_tomato_leaf_l.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.4364897310733795
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/tomato-diseases-1-638.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.4340261220932007
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf mosaic virus/ill-tomato-of-tomato-mosaic-virus-DBE17N.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4336431324481964
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf bacterial spot/bact-spot-fig-1.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4321988821029663
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/b6ca3f80-cc10-4d4f-be0d-771deb9a4969.jpeg.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 0,
+      "pred_class_name": "Bacterial Spot",
+      "confidence": 0.4242824614048004
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Leaf+Mold+upper+leaf+surface.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4239286780357361
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-virus-symptoms-on-tomato-leaves-on-plants-AXKWFY.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.41983622312545776
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/mosiac-virus3.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4189634323120117
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato_yellow_leaf_curl_virus.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.41816020011901855
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/4118c92ffde66d327ee14e4023320bf7.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.40945613384246826
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/Problem-2a.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.4085806906223297
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/128110613-56a6d3633df78cf7729070ad.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.40739306807518005
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/20100824septoria.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.40444323420524597
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/46-Septoria-leaf-spot.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.39761433005332947
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bac-canker.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.3975221514701843
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/wd0phb4.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.39468565583229065
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/tomato.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.39361873269081116
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/latest?cb=20100719124603.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.3859635889530182
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato_virus_06_zoom.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.385907381772995
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Figure-1-6.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.3838164508342743
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/28619919393_7ef44acccc_b.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.3823847770690918
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato leaf yellow virus/fwa2013313115151.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.3811061978340149
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/image024.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.34577277302742004
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/Tomato-brown-rugose-fruit-virus-ToBRFV-infected-tomato-Solanum-lycopersicum-plants_Q320.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.3297301232814789
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-closeup-2.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.32571709156036377
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/Bacterial-Leaf-Spot-2.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.32116249203681946
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/OLU13.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 9,
+      "pred_class_name": "Healthy",
+      "confidence": 0.3193099796772003
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/tomato-yellow-leaf-curl-virus-pdf-78kb.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 4,
+      "pred_class_name": "Septoria Leaf Spot",
+      "confidence": 0.3174154460430145
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/tomato_bacterial-speck_03_zoom.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.3158026933670044
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/bed-4-tomatoes-23jun13.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 3,
+      "pred_class_name": "Leaf Mold",
+      "confidence": 0.3150637149810791
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/tomato-leaf-herbicide-damage.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.31177738308906555
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf bacterial spot/bacterial-canker4x640-1nz1vm7.jpg",
+      "true_class_id": 0,
+      "true_class_name": "Bacterial Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.30626919865608215
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato Septoria leaf spot/6+1+09+019.jpg",
+      "true_class_id": 4,
+      "true_class_name": "Septoria Leaf Spot",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.30576786398887634
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/test/Tomato Early blight leaf/bugs-and-blight-061.jpg",
+      "true_class_id": 1,
+      "true_class_name": "Early Blight",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.2862316370010376
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf mosaic virus/5Tomato+Mosaic+Virus.jpg",
+      "true_class_id": 8,
+      "true_class_name": "Tomato Mosaic Virus",
+      "pred_class_id": 6,
+      "pred_class_name": "Target Spot",
+      "confidence": 0.2846684753894806
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato mold leaf/GIVXB.jpg",
+      "true_class_id": 3,
+      "true_class_name": "Leaf Mold",
+      "pred_class_id": 1,
+      "pred_class_name": "Early Blight",
+      "confidence": 0.2719396650791168
+    },
+    {
+      "file_path": "/Users/shauryagarg/Projects/Agrii/data/raw/PlantDoc-Dataset/train/Tomato leaf yellow virus/dscn1652cropped.jpg",
+      "true_class_id": 7,
+      "true_class_name": "Tomato Yellow Leaf Curl Virus",
+      "pred_class_id": 2,
+      "pred_class_name": "Late Blight",
+      "confidence": 0.24785594642162323
+    }
+  ],
+  "target_names": [
+    "Bacterial Spot",
+    "Early Blight",
+    "Late Blight",
+    "Leaf Mold",
+    "Septoria Leaf Spot",
+    "Spider Mites",
+    "Target Spot",
+    "Tomato Yellow Leaf Curl Virus",
+    "Tomato Mosaic Virus",
+    "Healthy"
+  ]
+}

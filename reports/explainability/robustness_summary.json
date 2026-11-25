@@ -1,0 +1,42 @@
+{
+  "baseline": {
+    "prediction_retention_rate_pct": 100.0,
+    "mean_confidence_drift": -0.002940940856933594,
+    "samples_tested": 10
+  },
+  "brightness_high": {
+    "prediction_retention_rate_pct": 90.0,
+    "mean_confidence_drift": 0.016937440633773802,
+    "samples_tested": 10
+  },
+  "brightness_low": {
+    "prediction_retention_rate_pct": 100.0,
+    "mean_confidence_drift": 0.006684127449989319,
+    "samples_tested": 10
+  },
+  "contrast_high": {
+    "prediction_retention_rate_pct": 80.0,
+    "mean_confidence_drift": -0.02509518265724182,
+    "samples_tested": 10
+  },
+  "contrast_low": {
+    "prediction_retention_rate_pct": 100.0,
+    "mean_confidence_drift": 0.03677365779876709,
+    "samples_tested": 10
+  },
+  "rotation_10": {
+    "prediction_retention_rate_pct": 90.0,
+    "mean_confidence_drift": -0.0556527853012085,
+    "samples_tested": 10
+  },
+  "mild_blur": {
+    "prediction_retention_rate_pct": 80.0,
+    "mean_confidence_drift": -0.004753804206848145,
+    "samples_tested": 10
+  },
+  "downscale_160": {
+    "prediction_retention_rate_pct": 80.0,
+    "mean_confidence_drift": 0.02665914297103882,
+    "samples_tested": 10
+  }
+}

@@ -1,0 +1,11 @@
+class_id,class_name,plantvillage_clean_count,share_pct
+0,Bacterial Spot,2127,11.72%
+1,Early Blight,1000,5.51%
+2,Late Blight,1901,10.48%
+3,Leaf Mold,952,5.25%
+4,Septoria Leaf Spot,1771,9.76%
+5,Spider Mites,1676,9.24%
+6,Target Spot,1404,7.74%
+7,Tomato Yellow Leaf Curl Virus,5357,29.52%
+8,Tomato Mosaic Virus,373,2.06%
+9,Healthy,1585,8.73%
