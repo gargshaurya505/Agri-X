@@ -1,338 +1,210 @@
-# AGRI-X – Explainable AI-Based Crop Disease Detection and Agricultural Intelligence System
+# AGRI-X: Explainable Crop Disease Detection
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.2+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-**AGRI-X** is an end-to-end, explainable artificial intelligence system engineered to identify crop diseases, quantify classification uncertainty, generate visual heatmaps using Grad-CAM, provide actionable agricultural advisory, and maintain diagnostic histories for precision farming.
+A machine learning system for tomato crop disease diagnosis with visual explanations powered by Grad-CAM. Built as a college major project using PyTorch, FastAPI, and React. Everything runs locally on your computer—no cloud services, no remote data uploads.
 
 ---
 
-## 1. Project Objectives
-- **Accurate Disease Classification**: Multi-class visual classification across crop pathologies, initialized on 10 tomato leaf categories.
-- **Explainable Diagnostics (XAI)**: Visual attribution through Grad-CAM to confirm the model attends to pathological lesions rather than background artifacts.
-- **Cross-Domain Generalization**: Stress-testing models trained on lab-conditioned benchmarks (PlantVillage) against in-the-wild photography (PlantDoc).
-- **Extensible Architecture**: Modular foundation ready to accommodate multi-crop extensions, RESTful APIs, and responsive interactive web interfaces.
+## What is AGRI-X?
+
+Standard image classification models act like black boxes: you feed in a leaf photo, and the model outputs a label like "Early Blight 92%" without showing *why* it made that choice. In agriculture, trusting a bad prediction could ruin an entire crop bed through unnecessary or wrong pesticide treatment.
+
+AGRI-X addresses this by coupling a fine-tuned ResNet-18 model with **Grad-CAM (Gradient-weighted Class Activation Mapping)**. Whenever it predicts a pathology, it generates a heat map highlighting the exact regions on the leaf (lesions, fungal spots, chlorosis) that influenced its decision.
+
+### Key Highlights
+- **10 Tomato Conditions**: Classifies 9 common foliar diseases plus healthy leaves.
+- **Visual Attribution**: Generates heatmaps from the final convolutional layer (`layer4`) to verify the network is looking at lesions, not background noise.
+- **In-The-Wild Evaluation**: Tested against both controlled benchmark datasets (PlantVillage) and noisy, in-field photos (PlantDoc) to measure domain shift.
+- **Local-First Architecture**: Runs on Apple Silicon (MPS) or CUDA/CPU with a FastAPI backend and a clean React + Tailwind CSS dashboard.
 
 ---
 
-## 2. Supported Tomato Classes (Phase 1 Baseline)
-1. **Bacterial Spot** (*Xanthomonas campestris pv. vesicatoria*)
-2. **Early Blight** (*Alternaria solani*)
-3. **Late Blight** (*Phytophthora infestans*)
-4. **Leaf Mold** (*Passalora fulva*)
-5. **Septoria Leaf Spot** (*Septoria lycopersici*)
-6. **Spider Mites / Two-spotted spider mite** (*Tetranychus urticae*)
-7. **Target Spot** (*Corynespora cassiicola*)
-8. **Tomato Yellow Leaf Curl Virus (TYLCV)**
-9. **Tomato Mosaic Virus (ToMV)**
-10. **Healthy** (*Solanum lycopersicum*)
+## Supported Disease Classes
+
+The model currently recognizes 10 tomato leaf classes:
+
+| Class Name | Pathogen / Condition |
+|---|---|
+| Bacterial Spot | *Xanthomonas campestris pv. vesicatoria* |
+| Early Blight | *Alternaria solani* |
+| Late Blight | *Phytophthora infestans* |
+| Leaf Mold | *Passalora fulva* |
+| Septoria Leaf Spot | *Septoria lycopersici* |
+| Two-Spotted Spider Mite | *Tetranychus urticae* |
+| Target Spot | *Corynespora cassiicola* |
+| Tomato Yellow Leaf Curl Virus (TYLCV) | Begomovirus |
+| Tomato Mosaic Virus (ToMV) | Tobamovirus |
+| Healthy | Uninfected foliage (*Solanum lycopersicum*) |
 
 ---
 
-## 3. Technology Stack
-- **Machine Learning & CV**: Python 3.12, PyTorch, Torchvision (ResNet18), NumPy, Pandas, Scikit-learn, PIL.
-- **Visualization & Explainability**: Matplotlib, Seaborn, Grad-CAM (Target layer: `layer4`).
-- **Backend API**: FastAPI, Pydantic, Uvicorn (Phase 4).
-- **Database**: SQLite (Phase 4).
-- **Frontend**: React, Vite, Tailwind CSS, Lucide React, Recharts (Phase 5).
-- **Testing & Tooling**: Pytest, YAML, Tqdm.
+## How It Works
+
+```
+[ Leaf Photograph ]
+         │
+         ▼
+[ FastAPI Service ] ──> Preprocessing (224x224, ImageNet normalization)
+         │
+         ▼
+[ PyTorch ResNet-18 ] ──> Softmax Probabilities (Top-5 Predictions)
+         │
+         ▼
+[ Grad-CAM Hook ] ──> Extracts gradients from layer4[-1]
+         │
+         ▼
+[ React + Vite UI ] <── Returns JSON result + Base64 Heatmap overlay
+```
+
+1. **Frontend**: The user drops an image into the React interface.
+2. **Inference**: The image is posted to a local FastAPI endpoint (`/api/v1/predict`), normalized, and fed into the PyTorch ResNet-18 backbone.
+3. **Attribution**: If requested (`/api/v1/explain`), Grad-CAM computes gradients with respect to the target class activations at the final convolutional layer, applies a ReLU filter, and overlays the heat map onto the original image.
+4. **Display**: The UI displays confidence percentages, top-5 candidate distributions, agronomic advice, and the visual attribution panel.
 
 ---
 
-## 4. Project Directory Structure
-```text
-AGRI-X/
-│
-├── api/                     # Backend API module (FastAPI)
-│   ├── routes/              # HTTP endpoint route handlers
-│   ├── services/            # Business & inference service layers
-│   ├── schemas/             # Pydantic request/response schemas
-│   └── database/            # SQLite connection and ORM models
-│
-├── frontend/                # React + Vite + Tailwind frontend application
-│
-├── src/                     # Core ML research & engineering source code
-│   ├── data/                # Dataset loaders, auditing & preprocessing
-│   ├── models/              # Neural network architectures & wrappers
-│   ├── training/            # Training loops, loss functions & optimizers
-│   ├── evaluation/          # Metrics, confusion matrices & benchmark validation
-│   ├── explainability/      # Grad-CAM heatmap extraction routines
-│   └── utils/               # Hardware detection, configuration loaders, logging
-│
-├── configs/                 # YAML configuration files (models, datasets, pipeline)
-│
-├── data/                    # Data storage (git-ignored raw/processed splits)
-│   ├── raw/                 # Immutable raw benchmarks (PlantVillage, PlantDoc)
-│   ├── interim/             # Intermediate transformed representations
-│   ├── processed/           # Standardized, audited images
-│   ├── splits/              # Train/validation/test manifest indices
-│   └── metadata/            # Class mappings, audit logs and schemas
-│
-├── models/                  # Trained model checkpoints and serialized weights
-│
-├── experiments/             # Experiment run tracking and parameter dumps
-│
-├── reports/                 # Project documentation & visual evaluation artifacts
-│   ├── dataset_audit/       # Data validation logs, corruption & duplicate checks
-│   ├── metrics/             # Classification reports, ROC & PR curves
-│   ├── figures/             # Confusion matrices and Grad-CAM visualizations
-│   └── external_validation/ # PlantDoc cross-domain evaluation reports
-│
-├── scripts/                 # CLI entry points and orchestration utilities
-├── tests/                   # Automated Pytest suite
-├── README.md                # Project documentation
-├── requirements.txt         # Project dependencies
-└── .gitignore               # Ignored binaries, venv, and checkpoints
+## Tech Stack
+
+- **Machine Learning**: Python 3.12, PyTorch, Torchvision, Scikit-learn, PIL, NumPy, Pandas
+- **Interpretability**: Custom Grad-CAM implementation (`src/explainability/grad_cam.py`)
+- **Backend API**: FastAPI, Uvicorn, Pydantic
+- **Frontend**: React 18, Vite, Tailwind CSS, Lucide React, Recharts
+- **Storage**: Browser `localStorage` for analysis history and user settings
+
+---
+
+## Project Structure
+
+```
+Agrii/
+├── api/                     # FastAPI backend
+│   ├── routes/              # Health, prediction, and explainability endpoints
+│   ├── schemas/             # Pydantic models for validation
+│   └── services/            # Lifespan model loader and Grad-CAM handler
+├── configs/                 # YAML configs for dataset, training, and augmentations
+├── data/                    # Datasets (git-ignored) and train/val/test split manifests
+│   ├── raw/                 # PlantVillage & PlantDoc datasets
+│   └── splits/              # Zero-leakage split CSVs (train, val, test)
+├── frontend/                # React + Vite application
+│   └── src/
+│       ├── components/      # UI components (Upload, Results, Charts, Navbar)
+│       ├── pages/           # Landing, Dashboard, Detect, Library, History
+│       └── services/        # Axios API clients & local history store
+├── models/                  # Checkpoints, class mappings, and training metadata
+├── reports/                 # Audit files, confusion matrices, and Grad-CAM panels
+├── scripts/                 # CLI tools for auditing, training, and evaluation
+├── src/                     # Core ML logic (DataLoader, ResNet, Grad-CAM)
+└── tests/                   # Pytest test suite (27 tests)
 ```
 
 ---
 
-## 5. Development Roadmap (Six Phases)
-- **Phase 1: Project Foundation** *(Current)*
-  - Establish complete directory architecture.
-  - Python 3.12 environment with multi-device hardware acceleration (MPS, CUDA, CPU).
-  - YAML configuration specifications.
-  - Image auditing, corruption scanning, and hash-based duplicate detection pipeline.
-  - Test suite for environmental and data invariants.
-- **Phase 2: Data Pipeline & Preprocessing**
-  - Dataset ingestion and class indexing.
-  - Stratified 70/15/15 train/val/test splitting.
-  - Class imbalance handling and augmentation strategies.
-- **Phase 3: Model Architecture, Training & Explainability**
-  - ResNet18 transfer learning baseline.
-  - PyTorch training pipeline with early stopping and checkpointing.
-  - Grad-CAM explainability integration.
-- **Phase 4: Backend API & Persistence**
-  - FastAPI inference server.
-  - Diagnostic history and recommendation engine with SQLite.
-- **Phase 5: Frontend Interface**
-  - React + Vite dashboard.
-  - Interactive image upload, prediction breakdown, and heatmap overlays.
-- **Phase 6: Integration, External Validation & System Hardening**
-  - Cross-domain validation against real-world PlantDoc dataset.
-  - Performance profiling, documentation, and final deployment packaging.
+## Quick Start (Running Locally)
 
----
+### 1. Prerequisites
+- Python 3.12
+- Node.js 18+ and npm
+- A modern browser (Chrome, Safari, Firefox, Edge)
 
-## 6. Environment Setup
-
-### Prerequisites
-- Python 3.12 installed.
-- Terminal with access to bash/zsh.
-
-### Setup Instructions
+### 2. Setup the Python Environment
 ```bash
-# 1. Create a virtual environment using Python 3.12
-python3.12 -m venv .venv
+# Clone the repository
+git clone https://github.com/gargshaurya505/Agri-X.git
+cd Agri-X
 
-# 2. Activate the virtual environment
+# Create and activate a virtual environment
+python3 -m venv .venv
 source .venv/bin/activate
 
-# 3. Upgrade pip and install Phase 1 dependencies
-pip install --upgrade pip
+# Install backend dependencies
 pip install -r requirements.txt
 ```
 
----
-
-## 7. Dataset Placement Instructions
-
-The system expects two primary datasets placed in `data/raw/`:
-
-### A. PlantVillage (Primary Training Dataset)
-Place the extracted PlantVillage color images into:
-`data/raw/plantvillage/raw/color/`
-And the leaf mapping file into:
-`data/raw/plantvillage/leaf-map.json`
-
-The 10 recognized tomato classes are:
-- `Tomato___Bacterial_spot`
-- `Tomato___Early_blight`
-- `Tomato___Late_blight`
-- `Tomato___Leaf_Mold`
-- `Tomato___Septoria_leaf_spot`
-- `Tomato___Spider_mites Two-spotted_spider_mite`
-- `Tomato___Target_Spot`
-- `Tomato___Tomato_Yellow_Leaf_Curl_Virus`
-- `Tomato___Tomato_mosaic_virus`
-- `Tomato___healthy`
-
-### B. PlantDoc (External In-The-Wild Evaluation Dataset)
-Place the extracted PlantDoc dataset into:
-`data/raw/PlantDoc-Dataset/`
-
----
-
-## 8. Dataset Audit & Group-Aware Splitting
-
-### Step 1: Run Full Dataset Audit & Verification
-Scans all images, checks header integrity, identifies exact duplicates via SHA-256, and generates reports:
+### 3. Setup the Frontend
 ```bash
-python scripts/audit_datasets.py
-```
-Outputs are written to:
-- `reports/dataset_audit/dataset_inventory.md`
-- `reports/dataset_audit/class_distribution.csv`
-- `reports/dataset_audit/corrupted_images.csv`
-- `reports/dataset_audit/duplicate_report.csv`
-- `data/metadata/plantvillage_metadata.json`
-- `data/metadata/plantdoc_metadata.json`
-
-### Step 2: Generate Group-Aware Splits (Zero-Leakage)
-Splits PlantVillage into 70% Train, 15% Validation, and 15% Test while guaranteeing that leaf sequence groups and identical hashes never cross split boundaries:
-```bash
-python scripts/create_splits.py
-```
-Manifests are saved to:
-- `data/splits/train.csv` (12,697 images)
-- `data/splits/val.csv` (2,717 images)
-- `data/splits/test.csv` (2,732 images)
-
----
-
-## 9. Model Training (ResNet18 Transfer Learning)
-
-Train the ResNet18 model using staged transfer learning (head warm-up followed by fine-tuning `layer4` and classification head):
-```bash
-python scripts/train_model.py --epochs-head 2 --epochs-finetune 3 --batch-size 64 --num-workers 4
-```
-Hardware acceleration automatically utilizes Apple Silicon MPS (`mps`), NVIDIA CUDA (`cuda`), or CPU fallback. Checkpoints and experiment metadata are saved to:
-- `models/best_resnet18.pth`
-- `models/latest_resnet18.pth`
-- `models/class_mapping.json`
-- `models/training_config.json`
-- `experiments/training_history.json`
-
----
-
-## 10. Model Evaluation
-
-### A. Internal Test Set Evaluation (Untouched 15% Split)
-Evaluate the selected model on the 2,732 held-out PlantVillage test images:
-```bash
-python scripts/evaluate_model.py
-```
-Outputs:
-- Machine-readable metrics: `reports/metrics/internal_test_metrics.json`
-- Confusion matrices: `reports/figures/internal_test_confusion_matrix.png` and `internal_test_confusion_matrix_normalized.png`
-
-### B. External In-The-Wild Evaluation (PlantDoc Benchmark)
-Evaluate generalization against real-world, in-the-wild photography from PlantDoc:
-```bash
-python scripts/evaluate_external.py
-```
-Outputs:
-- Machine-readable metrics: `reports/external_validation/plantdoc_metrics.json`
-- Confusion matrices: `reports/external_validation/plantdoc_external_confusion_matrix.png`
-- Domain shift analysis report: `reports/external_validation/external_validation_report.md`
-
----
-
-## 11. Explainable AI & Model Interpretability (Grad-CAM)
-
-### A. What is Grad-CAM in AGRI-X?
-Gradient-weighted Class Activation Mapping (Grad-CAM) produces coarse 2D heatmaps of visual attribution indicating the salient discriminative regions the convolutional neural network attends to when diagnosing a leaf pathology. It allows agriculturalists and researchers to verify whether the AI model focuses on actual pathogenic lesions (such as necrotic spots or fungal mycelia) rather than background cards, petioles, or image artifacts.
-
-### B. Generate Explanation for a Single Leaf Image
-Generate a 4-panel diagnostic visual (Original Image, Grayscale Activation Map, Color Attribution Overlay, and Top Alternative Class Probabilities):
-```bash
-python -c "
-import torch
-from pathlib import Path
-from src.models.resnet18 import build_model
-from src.explainability.explanation_service import ExplanationService
-
-ckpt = torch.load('models/best_resnet18.pth', map_location='cpu')
-class_mapping = {int(k): v for k, v in ckpt['class_mapping'].items()}
-model = build_model(num_classes=ckpt['num_classes'], pretrained=False)
-model.load_state_dict(ckpt['model_state_dict'])
-
-service = ExplanationService(model=model, class_mapping=class_mapping, device=torch.device('cpu'))
-result = service.explain_image('data/raw/plantvillage/raw/color/Tomato___Bacterial_spot/3e4ca861-5f1d-43c1-9b31-225455da4533___GCREC_Bact.Sp 3098.JPG')
-service.save_explanation_panel(result, 'reports/figures/gradcam/single_explanation_panel.png')
-print('Diagnostic panel saved to reports/figures/gradcam/single_explanation_panel.png')
-"
+cd frontend
+npm install
+cd ..
 ```
 
-### C. Batch Explainability Generation
-Generate visual explanation panels and record explanation metadata across held-out splits:
+### 4. Running the Application
+
+Open two terminal tabs:
+
+**Tab 1 (FastAPI Backend):**
 ```bash
-python scripts/generate_gradcam.py --limit-per-class 2
-```
-Outputs:
-- Diagnostic panels: `reports/figures/gradcam/`
-- Metadata: `reports/explainability/gradcam_metadata.csv`
-
-### D. Misclassification & Error Attribution Analysis
-Inspect high-confidence and low-confidence classification errors, comparing predicted class attributions against true ground-truth class counterfactuals:
-```bash
-python scripts/analyze_misclassifications.py
-```
-Outputs:
-- Error & counterfactual panels: `reports/figures/misclassifications/`
-- Error metadata: `reports/explainability/misclassified_examples.csv`
-
-### E. Controlled Robustness & Perturbation Experiments
-Evaluate model prediction stability and confidence drift across non-destructive visual transformations (brightness, contrast, affine rotation, blur, downscaling):
-```bash
-python scripts/run_robustness_experiments.py
-```
-Outputs:
-- Robustness panels: `reports/figures/robustness/`
-- Detailed metrics CSV: `reports/explainability/robustness_results.csv`
-- Executive summary JSON: `reports/explainability/robustness_summary.json`
-- Comprehensive evaluation report: `reports/explainability/explainability_evaluation_report.md`
-
-### F. Grad-CAM Methodological Limitations
-1. **Attribution, not biological proof:** Grad-CAM reflects model feature correlations, not definitive biological causation.
-2. **Coarse resolution:** Attributions are calculated from $7 \times 7$ feature maps in `layer4`, yielding smooth regional heatmaps rather than fine cellular boundaries.
-3. **Closed-world calibration:** Softmax probabilities reflect relative confidence among the 10 known classes, not absolute real-world probabilities.
-
----
-
-## 13. Local AI Web Application (FastAPI + React Integration)
-
-AGRI-X operates as a local AI web application running entirely on your machine.
-- **Backend Service**: FastAPI server communicating with the trained ResNet18 PyTorch model and Grad-CAM interpreter on `http://127.0.0.1:8000`.
-- **Frontend Dashboard**: React + Vite application running on `http://localhost:5173`.
-- **Privacy & Security**: Zero cloud dependencies; leaf photographs never leave your local environment.
-
-### A. Local API Endpoints
-| HTTP Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/api/v1/health` | Service health status, model readiness, compute device (`mps`), and class count |
-| `POST` | `/api/v1/predict` | Multipart image upload for ResNet18 inference returning predicted pathology and top-5 Softmax probability scores |
-| `POST` | `/api/v1/explain` | Computes real Grad-CAM attribution heatmaps from `layer4[-1]` and returns base64-encoded PNG overlays |
-
-### B. Launching the Complete Local System
-
-Open two terminal windows:
-
-#### Terminal 1: Launch the Local Python AI Service
-```bash
-# 1. Activate Python virtual environment
 source .venv/bin/activate
-
-# 2. Launch FastAPI with Uvicorn
 python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
-Swagger interactive API documentation will be available at: `http://127.0.0.1:8000/docs`.
+*Health check & Swagger docs will be live at `http://127.0.0.1:8000/docs`.*
 
-#### Terminal 2: Launch the React Frontend
+**Tab 2 (React Frontend):**
 ```bash
-# 1. Enter the frontend directory
 cd frontend
-
-# 2. Launch the Vite development server
 npm run dev
 ```
-Open your browser at: **`http://localhost:5173`**.
+*Open **`http://localhost:5173`** in your browser.*
 
 ---
 
-## 14. Running Automated Tests
-Run the entire comprehensive test suite (27 tests across Phase 1, 2, 3, and 5):
+## Training & Evaluation Notes
+
+### Dataset Splitting & Leakage Prevention
+During initial testing, we found duplicate photos in the raw PlantVillage dataset. If identical leaves fall into both the training and test splits, the test metrics become artificially inflated.
+To solve this:
+- Exact image duplicates were identified and removed using SHA-256 hashes.
+- Images were split 70% Train (12,697 images), 15% Validation (2,717 images), and 15% Test (2,732 images) using grouped splitting (`scripts/create_splits.py`) so related leaf sequences never cross splits.
+
+### Training Procedure
+We used a staged transfer learning approach:
+1. **Warmup Phase**: The pretrained ResNet-18 convolutional backbone is frozen; only the newly attached classification head is trained for 2 epochs.
+2. **Fine-Tuning Phase**: The final residual block (`layer4`) along with the linear classifier are unfrozen and trained with AdamW and cosine annealing learning rate scheduling.
+
+```bash
+python scripts/train_model.py --epochs-head 2 --epochs-finetune 3 --batch-size 64
+```
+
+### Results Summary
+- **Internal Test Set (PlantVillage)**:
+  - Accuracy: **98.43%**
+  - Macro F1: **98.01%**
+  - Most confused classes: *Early Blight* vs *Target Spot* due to similar concentric ring lesion patterns.
+- **External Real-World Test Set (PlantDoc)**:
+  - Accuracy: **33.48%**
+  - Evaluated on in-the-wild photos with complex backgrounds (dirt, hands, sky, overlapping foliage). This drop highlights real-world domain shift—a central discussion point in our major project defense.
+
+---
+
+## Explainability (Grad-CAM)
+
+To see the visual explanations from the command line:
+
+```bash
+# Generate explanation panels across sample test images
+python scripts/generate_gradcam.py --limit-per-class 2
+
+# Run robustness experiments (brightness, rotation, blur perturbations)
+python scripts/run_robustness_experiments.py
+```
+
+Generated panels are stored in `reports/figures/gradcam/`.
+
+---
+
+## Running Tests
+
+To verify that the model architecture, image validation pipeline, API routes, and Grad-CAM hooks are working properly:
+
 ```bash
 pytest tests/ -v
 ```
+
+All 27 integration and unit tests should pass.
+
+---
+
+## Author & Academic Context
+
+- **Author**: Shaurya Garg
+- **Degree**: Bachelor of Technology (Computer Science & Engineering)
+- **Project**: Major Project / Capstone Defense
+- **Institution**: Graphic Era University
