@@ -1,0 +1,9 @@
+{
+  "epochs_head": 2,
+  "epochs_finetune": 3,
+  "batch_size": 64,
+  "lr_head": 0.001,
+  "lr_finetune": 0.0001,
+  "num_workers": 4,
+  "seed": 42
+}
