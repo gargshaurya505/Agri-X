@@ -47,3 +47,4 @@ reports/figures/*
 frontend/node_modules/
 frontend/dist/
 frontend/.env.local
+node_modules
